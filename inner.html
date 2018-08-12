@@ -7,9 +7,12 @@
   <body>
 <header class="main-header">
   		<nav class="main-navigator">
-  		<div class="main-header-logo">
-  			<img src="img/index-logo.svg" width="200" height="100" alt="Городок «Седона»">
-  		</div>
+  		
+      <div class="main-header-logo">
+  			<a class="main-header-logo" href="index.html">
+        <img src="img/index-logo.svg" width="200" height="100" alt="Городок «Седона»">
+  		  </a>
+      </div>
   			
   			<ul class="site-navigator">
   				<li><a href="#">Информация</a></li>
@@ -20,10 +23,70 @@
     	</nav>
   	</header>
     <main class="container">
+      <h1 class="visually-hidden">Поиск гостиницы</h1>
+       
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтры поиска:</h2>
+          <!-- Здесь будет форма -->
+        </section>
 
-       </main>
-    
-    <footer class="main-footer">
+        <section class="hotel">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="hotel-list">
+          <li class="hotel-item">
+            <h3>
+              <a href="#">Amara-resort & SPA</a>
+            </h3>
+          <p class="hotel-item-image">
+            <a class="#">
+              <img src="img/hotel-1.jpg" width="" height="" alt="Amara-resort & SPA">
+            </a>
+          </p>
+          <p class="hotel-title">Гостиница</p>
+          <p class="holel-prise">от 4000 Р.</p>
+          <p class="hotel-rating">Рейтинг:8,5</p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
+          </li>
+        <li class="hotel-item">
+            <h3>
+              <a href="#">Desert Quail Inn</a>
+            </h3>
+          <p class="hotel-item-image">
+            <a class="#">
+              <img src="img/hotel-2.jpg" width="" height="" alt="Desert Quail Inn">
+            </a>
+          </p>
+          <p class="hotel-title">Мотель</p>
+          <p class="holel-prise">от 3000 Р.</p>
+          <p class="hotel-rating">Рейтинг:8,9</p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
+          </li>
+          <li class="hotel-item">
+            <h3>
+              <a href="#">Villas at Poco Diablo</a>
+            </h3>
+          <p class="hotel-item-image">
+            <a class="#">
+              <img src="img/hotel-3.jpg" width="" height="" alt="Villas at Poco Diablo">
+            </a>
+          </p>
+          <p class="hotel-title">Апартаменты</p>
+          <p class="holel-prise">от 2000 Р.</p>
+          <p class="hotel-rating">Рейтинг:9,2</p>
+            <a class="button" href="#">Подробнее</a>
+            <a class="button" href="#">Забронировать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="modal modal-search">
+            <h2>Поиск гостиницы в Седоне</h2>
+              <!-- Здесь будет форма -->
+          <span class="modal-close">x</span>
+        </section>
+    </main>
+        <footer class="main-footer">
       <p class="footer-contacts">
         <a href="#" class="hashtag">#VISITSEDONA</a>
       </p>
