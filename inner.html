@@ -61,14 +61,24 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки(р):</legend>
-          <input type="range">
-
+          <div class="range">
+            <ul>
+              <li class="visually-hidden range-option">
+                <label for="range-from">От</label>
+                  <input type="text" name="range-from" id="range-from" value="0">
+              </li>
+              <li class="visually-hidden range-option">
+                <label for="range-to">До</label>
+                  <input type="text" name="range-to" id="range-to" value="3000">
+              </li>
+            </ul>
+          </div>
+          <button class="visually-hidden range-from" type="button">От</button>
+          <button class="visually-hidden range-to" type="button">До</button>
         </fieldset>
         <button class="button" type="submit">Показать</button>
         </form>
-
       </section>
-
         <section class="sorting">
           <h2 class="visually-hidden">Сортировка</h2>
           <p class="sorting-title">Найдено 3:</p>
