@@ -27,6 +27,7 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
+          <div class="checkbox">
           <ul>
             <li class="filter-option">
             <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
@@ -41,9 +42,11 @@
             <label for="wi-fi">WI-FI</label>
           </li>
           </ul>
+        </div>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
+          <div class="checkbox">
           <ul>
             <li class="filter-option">
               <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
@@ -58,6 +61,7 @@
                 <label for="apartments">Аппартаменты</label>
             </li>
           </ul>
+        </div>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки(р):</legend>
@@ -94,14 +98,14 @@
               <a class="sorting-link" href="#">По рейтингу</a>
             </li>
             </ul>
-            <ul class="">
+            <ul>
               <li class="sorting-item">
                 <a class="sorting-icon" href="#">
-                <button type="button">Треугольник верх</button></a>
+                По убыванию</a>
               </li>
               <li class="sorting-item">
                 <a class="sorting-icon-active" href="#">
-                <button type="button">Треугольник вниз</button></a>
+                По возрастаниию</a>
               </li>
           </ul>
         </section>
@@ -162,27 +166,33 @@
         </ul>
       </section>
       <section class="modal modal-search">
-        <h2>Поиск гостиницы в Седоне</h2>
+        <button type="button">Поиск гостиницы в Седоне</button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label for="arrival_date">Дата заезда:</label>
-              <input type="text" name="arrival_date" id="arrival_date" placeholder="24 апреля 2017">
-              <button class="calendar" type="button">Календарь</button>
-            <label for="departure_date">Дата выезда:</label>
-              <input type="text" name="departure_date" id="departure_date" placeholder="4 июля 2017">
-              <button class="calendar" type="button">Календарь</button>
+            <p class="search-form-line">
+            <label class="search-form-label" for="arrival_date">Дата заезда:</label>
+              <div class="search-form-fieled">
+                <input type="text" name="arrival_date" id="arrival_date" placeholder="24 апреля 2017">
+                <button class="calendar" type="button">Календарь</button>
+              </div>
+            <label class="search-form-label" for="departure_date">Дата выезда:</label>
+              <div class="search-form-fieled">
+                <input type="text" name="departure_date" id="departure_date" placeholder="4 июля 2017">
+                <button class="calendar" type="button">Календарь</button>
+               </div>
             <div class="half-width">
               <label for="people">Взрослые:</label>
                 <input type="text" name="people" id="people" placeholder="2">
-                <button class="btn-plus" type="button">Плюс</button>
-                <button class="btn-minus" type="button">Минус</button>
+                <button class="btn-plus" type="button">Добавить</button>
+                <button class="btn-minus" type="button">Убрать</button>
             </div>
             <div class="half-width">
               <label for="children">Дети:</label>
                 <input type="text" name="children" id="children" value="0">
-                <button class="btn-plus" type="button">Плюс</button>
-                <button class="btn-minus" type="button">Минус</button>
+                <button class="btn-plus" type="button">Добавить</button>
+                <button class="btn-minus" type="button">Убрать</button>
             </div>
-            <button class="button" type="button">Найти</button>
+            <button class="button" type="submit">Найти</button>
+          </p>
           </form>
           <button class="modal-close">Закрыть</button>
       </section>
