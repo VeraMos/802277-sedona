@@ -27,38 +27,47 @@
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <div class="checkbox">
           <ul>
             <li class="filter-option">
-            <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
-            <label for="pool">Бассейн</label>
+              <div class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="option-pool" id="option-pool" checked>
+                <label for="option-pool">Бассейн</label>
+              </div>
+            </li>
+          <li class="filter-option">
+             <div class="checkbox">
+               <input class="visually-hidden" type="checkbox" name="option-parking" id="option-parking">
+               <label for="option-parking">Парковка</label>
+             </div>
           </li>
           <li class="filter-option">
-            <input class="visually-hidden" type="checkbox" name="parking" id="parking">
-            <label for="parking">Парковка</label>
-          </li>
-          <li class="filter-option">
-            <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-            <label for="wi-fi">WI-FI</label>
+            <div class="checkbox">
+              <input class="visually-hidden" type="checkbox" name="option-wi-fi" id="option-wi-fi">
+              <abel for="option-wi-fi">WI-FI</label>
+            </div>
           </li>
           </ul>
-        </div>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <div class="checkbox">
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
+              <div class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="option-hotel" id="option-hotel" checked>
+                <label for="option-hotel">Гостиница</label>
+              </div>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
+              <div class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="option-motel" id="option-motel" checked>
+                <label for="option-motel">Мотель</label>
+              </div>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Аппартаменты</label>
+              <div class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="option-apartments" id="option-apartments" checked>
+                <label for="option-apartments">Аппартаменты</label>
+              </div>
             </li>
           </ul>
         </div>
@@ -174,27 +183,30 @@
                 <input type="text" name="arrival_date" id="arrival_date" placeholder="24 апреля 2017">
                 <button class="calendar" type="button">Календарь</button>
               </div>
+            </p>
+            <p>
             <label class="search-form-label" for="departure_date">Дата выезда:</label>
               <div class="search-form-fieled">
                 <input type="text" name="departure_date" id="departure_date" placeholder="4 июля 2017">
                 <button class="calendar" type="button">Календарь</button>
                </div>
+           </p>
+           <p>
             <div class="half-width">
               <label for="people">Взрослые:</label>
+                <button class="btn-minus" type="button">Убрать</button>
                 <input type="text" name="people" id="people" placeholder="2">
                 <button class="btn-plus" type="button">Добавить</button>
-                <button class="btn-minus" type="button">Убрать</button>
             </div>
             <div class="half-width">
               <label for="children">Дети:</label>
+                <button class="btn-minus" type="button">Убрать</button>
                 <input type="text" name="children" id="children" value="0">
                 <button class="btn-plus" type="button">Добавить</button>
-                <button class="btn-minus" type="button">Убрать</button>
             </div>
+           </p>
             <button class="button" type="submit">Найти</button>
-          </p>
           </form>
-          <button class="modal-close">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
