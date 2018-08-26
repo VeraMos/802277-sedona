@@ -15,10 +15,17 @@ a {
 		text-decoration: none;
 }
 .main-navigation {
+		display: flex;
 		line-height: 26px;
+}
+.main-header-logo{
+		width:140px
+		height:72px;
 
 }
 .site-navigation{
+		margin:0;
+		padding:0;
  		list-style: none;
 }
 .site-navigation a{
@@ -50,17 +57,30 @@ a {
 /*.visually-hidden{
 		font-size: 0;*/
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .container h1{
 		font-size: 21px;
 		line-height: 26px;
 		text-align: center;
 }
+/*.reasons{
+		display:flex;
+		flex-direction: column;
+}*/
 .reason-description{
 		line-height: 26px;
 		font-weight: normal;
 		text-align: center;
 }
 .reasons-list{
+		width:1200px;
+		margin:0;
+		padding: 0;
 		list-style: none;
 		text-align: center;
 }
@@ -75,6 +95,19 @@ a {
 .reason-number,
 .reason-text{
 		font-weight: normal;
+		text-align: center;
+}
+.reason-column{
+	display: flex;
+}
+.reason-column-description{
+	width:300px;
+	margin:0;
+	padding: 50px;
+}
+.reasons-picture{
+		width:800px;
+		height:260px;
 }
 .features{
 		background-color: #ffffff;
@@ -82,6 +115,10 @@ a {
 		text-align: center;
 }
 .features-list{
+		margin:0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
 		list-style: none;
 		font-weight: normal;
 }
@@ -90,9 +127,22 @@ a {
 		font-size: 21px;
 		line-height: 21px;
 }
+.features-item{
+		margin:0;
+		padding:50px;
+		width:350px;
+
+}
 .gray{
+	width: 350px;
+	padding: 50px;
 		background-color: #eeeeee;
 }
+.reasons-column-3{
+	display: flex;
+	justify-content: space-between;
+}
+
 .search-title{
 		font-size:30px;
 		line-height: 36px;
