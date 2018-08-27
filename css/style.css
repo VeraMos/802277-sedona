@@ -23,6 +23,23 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden{
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .main-navigation {
 	display: flex;
 	line-height: 26px;
@@ -118,14 +135,14 @@ a {
 
 .reason-column{
 	display: flex;
+	justify-content: center;
+
 }
 
 .reason-column-description{
 	width:400px;
 	min-height:260px;
 	margin:0;
-	padding: 50px 55px;
-	box-sizing: border-box;
 	background-color: #81b3d2;
 	color:#ffffff;
 }
@@ -231,21 +248,41 @@ a {
 	list-style: none;
 }
 
+.sorting{
+	min-height:90px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
 .sorting-title{
+	margin: 0;
+	padding: 0;
 	font-size:21px;
 	line-height: 26px;
 }
 
 .sorting-text{
+	margin: 0;
+	padding: 0;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
 }
 
 .sorting-list{
+	display: flex;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
+.sorting-list:last-child{
+	margin-left: auto;
+}
+
 .sorting-item{
+	margin: 0;
+	padding: 0;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -267,9 +304,34 @@ a {
 	color:#81b3d2;
 }
 
+.hotel{
+	min-height: 455px;
+	display: flex;
+	flex-direction: column;
+}
+
 .hotel-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 	list-style: none;
 }
+
+.hotel-item{
+	min-height: 150px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.hotel-column{
+	width: 285px;
+	display: flex;
+	flex-direction: column;
+}
+
 .hotel-name a{
 	font-size:21px;
 	line-height:26px;
@@ -279,6 +341,16 @@ a {
 .hotel-title,
 .hotel-prise{
 	font-weight: normal;
+}
+
+.hotel-rate{
+	margin-left: auto;
+}
+
+.title-prise-column,
+.button-column{
+	display: flex;
+	justify-content: space-between;
 }
 
 .hotel-rate-text{
@@ -325,7 +397,6 @@ a {
 
 .search-form-fieled label{
 	line-height: 26px;
-
 }
 
 .search-form-fieled input,
