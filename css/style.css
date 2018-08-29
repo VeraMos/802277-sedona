@@ -2,6 +2,7 @@
 	width: 1200px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	margin:0 auto;
+	position: relative;
 
 }
 
@@ -58,18 +59,20 @@ input[type="checkbox"].visually-hidden{
 .site-navigation{
 	margin:0;
 	padding:0;
- 	list-style: none;
+	list-style: none;
+	display: flex;
 }
 .site-navigation a{
 	color:#000000;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover,
+.site-navigation a:focus,{
 	color:#81b3d2;
 }
 
 .site-navigation a:active{
-	color: rgba(255,255,255,0.5);
+	opacity: 0.3;
 }
 
 .site-navigation-current a{
@@ -393,6 +396,17 @@ input[type="checkbox"].visually-hidden{
 .button-filter:focus{
 	background-color: #ffffff;
 	color: #000000;
+}
+
+.modal-search{
+	width:586px;
+	min-height: 481px;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	position: absolute;
+	top:2083px;
+	left: 356px;
 }
 
 .search-form-fieled label{
