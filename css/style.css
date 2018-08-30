@@ -549,22 +549,40 @@ input[type="checkbox"].visually-hidden{
 	display: flex;
 	align-items: center;
 }
-
+.hotel-item img{
+	margin-right: 30px; 
+}
 .hotel-column{
-	width: 285px;
+	padding: 0;
+	margin: 0;
+	width: 261px;
+	min-height: 94px;
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
 
-.hotel-name a{
+.hotel-column h3{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
 	font-size:21px;
 	line-height:26px;
 	color:#000000;
 }
 
+.title-prise-column p{
+	margin-bottom: 15px: 
+}
+
+
 .hotel-title,
 .hotel-prise{
 	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px: 
+
 }
 
 .hotel-rate{
@@ -575,6 +593,12 @@ input[type="checkbox"].visually-hidden{
 .button-column{
 	display: flex;
 	justify-content: space-between;
+}
+
+.button-column .button-hotel{
+	padding: 5px 15px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .hotel-rate-text{
