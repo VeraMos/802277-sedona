@@ -471,6 +471,8 @@ input[type="checkbox"].visually-hidden{
 }
 
 .sorting{
+	padding: 30px 70px;
+	box-sizing: border-box;
 	min-height:90px;
 	display: flex;
 	align-items: center;
@@ -480,6 +482,7 @@ input[type="checkbox"].visually-hidden{
 .sorting-title{
 	margin: 0;
 	padding: 0;
+	margin-right: 50px;
 	font-size:21px;
 	line-height: 26px;
 }
@@ -487,6 +490,7 @@ input[type="checkbox"].visually-hidden{
 .sorting-text{
 	margin: 0;
 	padding: 0;
+	margin-right: 37px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
@@ -498,6 +502,7 @@ input[type="checkbox"].visually-hidden{
 	padding: 0;
 	list-style: none;
 }
+
 .sorting-list:last-child{
 	margin-left: auto;
 }
@@ -505,6 +510,7 @@ input[type="checkbox"].visually-hidden{
 .sorting-item{
 	margin: 0;
 	padding: 0;
+	margin-right: 30px;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -513,16 +519,30 @@ input[type="checkbox"].visually-hidden{
 	color:#81b3d2;
 }
 
-.sorting-link{
+.sorting-link {
 	color:#d4d4d4;
 	border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-icon{
+.sorting-list .triangle{
+	margin: 0;
+	padding: 0;
+	width: 37px;
+	min-height: 20px;
+}
+
+.sorting-item .triangle{
+	padding: 0;
+	margin: 0;
+	width: 11px;
+	height: 10px;
+}
+
+.sorting-icon a{
 	color:#cacaca;
 }
 
-.sorting-icon-active{
+.sorting-icon-active a{
 	color:#81b3d2;
 }
 
@@ -586,6 +606,14 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-rate{
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	width:240px;
+	min-height: 151px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 	margin-left: auto;
 }
 
@@ -602,11 +630,26 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-rate-text{
-	width:108px;
+	width:110px;
+	min-height: 27px;
+	margin: 0;
+	padding: 0;
 	font-weight: normal;
 	text-align:center;
+	vertical-align: middle;
 	color:#666666;
 	background-color: #f2f2f2;
+}
+
+.hotel-stars{
+	font-size: 0;
+	margin-top: 30px;
+	margin-bottom: 47px; 
+	width: 90px;
+	min-height: 20px;
+	background-image: url('../img/star.svg');
+	background-repeat: repeat-x;
+	background-position: right 0; 
 }
 
 .button {
