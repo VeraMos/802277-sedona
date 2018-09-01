@@ -677,21 +677,18 @@ input[type="checkbox"].visually-hidden{
 .modal-search{
 	position: relative;
 
-
 	width:576px;
-
 	margin: 0;
 	padding: 0;
+
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
-	/*position: absolute;
-	top:2083px;
-	left: 356px;*/
+
 }
+
 .button-search{
 	width:576px;
 	height: 86px;
@@ -701,23 +698,45 @@ input[type="checkbox"].visually-hidden{
 	position: absolute;
 	top:86px;
 	left: 0;
+
 	width:576px;
-	height: 395px;
+	min-height: 395px;
+	padding: 57px;
+	box-sizing: border-box;
 	background-color: #ffffff;
 
 	display: flex;
-	flex-direction: column;
-
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
+.search-form-line{
+
+	margin: 0;
+	padding: 0;
+	width:458px;
+	margin-bottom: 29px;
+}
+
 
 .search-form-fieled label{
+	display:block;
+	margin: 0;
+	padding: 0;
 	line-height: 26px;
 }
 
-.search-form-fieled input,
-.half-width input{
+.search-form-fieled input[type="text"],
+.half-width input[type="text"]{
+	box-sizing: border-box;
+	width: 346px;
+	padding: 7px 10px;
+	padding-right: 35px;
+
+	font:inherit;
+	color:red;
 	background-color: #f2f2f2;
-	line-height: 26px;
+	text-transform: uppercase;
 }
 
 .search-form-fieled input:hover,
@@ -730,6 +749,11 @@ input[type="checkbox"].visually-hidden{
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	outline: none;
+}
+
+.calendar button{
+	width:21px;
+	height: 22px;
 }
 
 .button-blue,
