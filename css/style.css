@@ -591,18 +591,20 @@ input[type="checkbox"].visually-hidden{
 	color:#000000;
 }
 
-.title-prise-column p{
-	margin-bottom: 15px: 
+.title-prise-column{
+	display: flex;
 }
-
 
 .hotel-title,
 .hotel-prise{
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 20px: 
+	margin-bottom: 15px; 
+}
 
+.hotel-title{
+	margin-right: 40px;
 }
 
 .hotel-rate{
@@ -617,7 +619,6 @@ input[type="checkbox"].visually-hidden{
 	margin-left: auto;
 }
 
-.title-prise-column,
 .button-column{
 	display: flex;
 	justify-content: space-between;
@@ -712,18 +713,23 @@ input[type="checkbox"].visually-hidden{
 }
 
 .search-form-line{
+	display: flex;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 }
 
 .half-width{
+	display: block;
 	position: relative;
 	margin:0;
 	padding: 0;
+	margin-left: 28px;
 
 }
 
 .search-form-fieled{
+	display: block;
 	position: relative;
 	margin: 0;
 	margin-left: 20px; 
@@ -747,7 +753,6 @@ input[type="checkbox"].visually-hidden{
 .half-width input[type="text"]{
 	font:inherit;
 	margin:0;
-	margin-left:28px;
 	width: 113px;
 
 	text-align: center;
@@ -767,13 +772,24 @@ input[type="checkbox"].visually-hidden{
 
 .calendar{
 	position: absolute;
-	top:10px;
+	padding: 0;
+	margin: 0;
+	top:5px;
 	right:13px;
 	width:21px;
 	height: 22px;
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
+}
+
+.calendar svg{
+	display: block;
+	fill:#a9a9a9;
+}
+
+.calendar:hover svg{
+	fill:red;
 }
 
 .btn-minus,
@@ -783,18 +799,18 @@ input[type="checkbox"].visually-hidden{
 	height: 38px;
 
 	font-size: 0;
-
+	background-color: transparent;
 	border: 0;
 	cursor: pointer;
 }
 
 .btn-minus{
-	top:0;
-	left:0;
+	top:-5px;
+	left:30px;
 }
 
 .btn-plus{
-	top:0;
+	top:-5px;
 	right:0;
 }
 
