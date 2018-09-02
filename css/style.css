@@ -655,6 +655,7 @@ input[type="checkbox"].visually-hidden{
 .button {
 	font-size: 21px;
 	line-height: 26px;
+	width: 100%;
 
 	text-align: center;
 	color: #ffffff;
@@ -711,45 +712,44 @@ input[type="checkbox"].visually-hidden{
 }
 
 .search-form-line{
-
 	margin: 0;
 	padding: 0;
-	width:458px;
-	margin-bottom: 29px;
 }
 
 .half-width{
-
+	position: relative;
 	margin:0;
 	padding: 0;
-	width: 113px;
+
 }
 
-.search-form-fieled label{
-
+.search-form-fieled{
+	position: relative;
 	margin: 0;
+	margin-left: 20px; 
 	padding: 0;
-	line-height: 26px;
+
 }
 
 .search-form-fieled input[type="text"],
 .half-width input[type="text"]{
-	position: relative;
+	border: none;
 	box-sizing: border-box;
 	width: 346px;
 	padding: 7px 10px;
 	padding-right: 35px;
-
+	line-height: 26px;
 	font:inherit;
-	color:red;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
 }
 
 .half-width input[type="text"]{
+	font:inherit;
+	margin:0;
+	margin-left:28px;
 	width: 113px;
-	padding-left: 38px;
-	padding-right: 38px;
+
 	text-align: center;
 }
 
@@ -767,18 +767,18 @@ input[type="checkbox"].visually-hidden{
 
 .calendar{
 	position: absolute;
-	top:0;
-	left:100px;
+	top:10px;
+	right:13px;
 	width:21px;
 	height: 22px;
-
+	background-color: transparent;
 	border: 0;
 	cursor: pointer;
 }
 
 .btn-minus,
 .btn-plus{
-	position: relative;
+	position: absolute;
 	width: 38px;
 	height: 38px;
 
@@ -786,6 +786,16 @@ input[type="checkbox"].visually-hidden{
 
 	border: 0;
 	cursor: pointer;
+}
+
+.btn-minus{
+	top:0;
+	left:0;
+}
+
+.btn-plus{
+	top:0;
+	right:0;
 }
 
 .btn-minus::before{
@@ -820,10 +830,10 @@ input[type="checkbox"].visually-hidden{
 }
 
 
-.buttom-blue{
+.button .buttom-blue{
 	margin: 0;
 	padding: 0;
-	width:458px;
+	width:100%;
 }
 
 .button-blue,
@@ -858,6 +868,11 @@ input[type="checkbox"].visually-hidden{
 	width:1200px;
 	min-height:120px;
 	box-sizing: border-box;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-around;
 }
 
 .footer-contacts{
@@ -895,12 +910,16 @@ input[type="checkbox"].visually-hidden{
 }
 
 .footer-copyright{
+	display: flex;
+	justify-content: space-between;
 	width:200px;
 	margin:0;
 	margin-left: 228px;
+
 }
 
 .footer-copyright b{
+	display: inline-block;
 	padding: 0;
 	margin: 0;
 	line-height: 26px;
@@ -908,23 +927,17 @@ input[type="checkbox"].visually-hidden{
 	margin-top: 50px;
 }
 
-.footer-copyright svg{
+.footer-copyright a{
 	width:115px;
 	height:41px;
 	margin-top: 40px;
 }
-.footer-copyright svg:hover,
-.footer-copyright svg:focus{
+.footer-copyright a:hover,
+.footer-copyright a:focus{
 	color:#81b3d2;
 }
-.footer-copyright svg:active{
+.footer-copyright a:active{
 	color:#bdbbbc;
-}
-
-
-.main-footer .container {
-	display: flex;
-	justify-content: space-around;
 }
 
 .social-button {
