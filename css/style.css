@@ -116,22 +116,26 @@ input[type="checkbox"].visually-hidden{
 
 .background-index h1{
 	align-self:center;
+	margin: 0;
 	width:640px;
 	min-height: 45px;
-	padding: 0 100px;
+	padding: 30px 100px;
 	box-sizing:border-box;
 	background-color: #ffffff;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+
 }
 
 .reason-description{
+	margin: 0;
 	align-self:center;
 	background-color: #ffffff;
 	line-height: 26px;
 	font-weight: normal;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .reasons-list{
@@ -151,6 +155,10 @@ input[type="checkbox"].visually-hidden{
 }
 
 .reason-title{
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	padding-left: 76px;
 	font-size: 21px;
 	line-height: 21px;
 }
@@ -793,13 +801,17 @@ input[type="checkbox"].visually-hidden{
 	cursor: pointer;
 }
 
-.calendar svg{
+.calendar svg {
 	display: block;
 	fill:#a9a9a9;
 }
 
 .calendar:hover svg{
-	fill:red;
+	fill:#000000;
+}
+
+.calindaer:active svg{
+	fill:#81b3d2;
 }
 
 .btn-minus,
@@ -834,7 +846,7 @@ input[type="checkbox"].visually-hidden{
 	width: 12px;
 	height: 3px;
 
-	background-color: #282828;
+	background-color: #a9a9a9;
 }
 
 .btn-plus::before,
@@ -848,11 +860,15 @@ input[type="checkbox"].visually-hidden{
 	width: 12px;
 	height: 3px;
 
-	background-color: #282828;
+	background-color: #a9a9a9;
 }
 
 .btn-plus::after {
 	transform: rotate(-90deg);
+}
+
+.btn-minus::before:hover{
+	color: #000000;
 }
 
 
@@ -956,12 +972,12 @@ input[type="checkbox"].visually-hidden{
 	height:41px;
 
 }
-.footer-copyright a:hover,
-.footer-copyright a:focus{
-	color:#81b3d2;
+.footer-copyright:hover svg,
+.footer-copyright:focus svg{
+	fill:#81b3d2;
 }
-.footer-copyright a:active{
-	color:#bdbbbc;
+.footer-copyright:active svg{
+	fill:#bdbbbc;
 }
 
 .social-button {
