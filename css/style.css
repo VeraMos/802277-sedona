@@ -600,7 +600,6 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-item{
-	min-height: 150px;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -611,6 +610,7 @@ input[type="checkbox"].visually-hidden{
 }
 .hotel-column{
 	padding: 0;
+	padding-left: 2px;
 	margin: 0;
 	width: 261px;
 	min-height: 94px;
