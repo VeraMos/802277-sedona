@@ -137,8 +137,9 @@ input[type="checkbox"].visually-hidden{
 	flex-direction: column;
 	justify-content: flex-end;
 	width:1200px;
-	min-height: 700px;
+	min-height: 724px;
 	margin:0;
+	padding-bottom: 55px;
 	padding:0;
 	text-align: center;
 	background-color: #ffffff;
@@ -147,15 +148,16 @@ input[type="checkbox"].visually-hidden{
 		url("../img/background.jpg");
 	background-position: 0px 452px, 0 0;
 	background-repeat: no-repeat;
+	box-sizing: border-box;
 }
 
 .background-index h1{
+	display: block;
 	align-self:center;
 	margin: 0;
-	width:640px;
-	min-height: 45px;
-	padding: 30px 100px;
-	box-sizing:border-box;
+	padding:0;
+	margin-bottom: 27px;
+	width:445px;
 	background-color: #ffffff;
 	font-size: 21px;
 	line-height: 26px;
@@ -165,6 +167,9 @@ input[type="checkbox"].visually-hidden{
 
 .reason-description{
 	margin: 0;
+	padding: 0;
+	margin-bottom: 51px;
+	display: block;
 	align-self:center;
 	background-color: #ffffff;
 	line-height: 26px;
@@ -189,35 +194,54 @@ input[type="checkbox"].visually-hidden{
 	flex-direction: row-reverse;
 }
 
+.reason-column-description{
+	width:400px;
+	margin:0;
+	padding-top:47px; 
+	padding-bottom:38px;
+	padding-right:60px;
+	padding-left: 60px;
+	box-sizing: border-box;
+	background-color: #81b3d2;
+	color:#ffffff;
+}
+
+
 .reason-title{
+	display: block;
 	margin: 0;
+	margin-bottom: 24px;
 	padding: 0;
-	width: 130px;
-	padding-left: 76px;
+	width: 151px;
+	text-align: center;
+	padding-left: 65px;
+	align-items: center;
 	font-size: 21px;
 	line-height: 21px;
 }
 
 .reason-number,
 .reason-text{
+	margin: 0;
+	margin-bottom: 21px; 
+	padding: 0;
 	font-weight: normal;
 	text-align: center;
 }
+
+.reason-text{
+	display: block;
+	margin-bottom: 0;
+	padding:0;
+	text-align: center;
+
+}
+
 
 .reason-column{
 	display: flex;
 	justify-content: center;
 
-}
-
-.reason-column-description{
-	width:400px;
-	min-height:256px;
-	margin:0;
-	padding:45px 60px 65px;
-	box-sizing: border-box;
-	background-color: #81b3d2;
-	color:#ffffff;
 }
 
 .reasons-picture{
@@ -241,18 +265,34 @@ input[type="checkbox"].visually-hidden{
 
 .feature-item{
 	position: relative;
-	padding: 160px 73px 85px;
 	box-sizing: border-box;
 	margin:0;
 	width:400px;
 	min-height:330px;
+	padding: 160px 50px;
+	padding-bottom: 0;
 }
 
-.feature-item h3{
+.feature-item p{
 	margin: 0;
+	padding: 0;
+}
+
+.feature-title{
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-bottom:25px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.feature-title p{
+	display: block;
+	margin: 0;
+	padding: 0;
+	min-width: 290px;
 }
 
 .lodging:before,
@@ -261,8 +301,8 @@ input[type="checkbox"].visually-hidden{
 	content: "";
 
 	position: absolute;
-	top: 55px;
-	left: 160px;
+	top: 60px;
+	left: 162px;
 	width: 85px;
 	height: 90px;
 	
@@ -270,18 +310,25 @@ input[type="checkbox"].visually-hidden{
 	background-position:0 0;
 }
 .lodging::before{
+	top: 60px;
+	left: 162px;
 	background-image:url("../img/icon-1.svg");
+
 }
 .food::before{
+	top: 61px;
+	left: 163px;
 	background-image:url("../img/icon-3.svg");
 }
 .souvenirs::before{
+	top: 56px;
+	left: 168px;
 	background-image:url("../img/icon-2.svg");
 }
 
 .reasons-list-gray{
 	margin: 0;
-	padding: 0;
+	padding: 0px 73px;
 	min-height: 260px;
 	display: flex;
 	justify-content: space-between;
@@ -291,10 +338,16 @@ input[type="checkbox"].visually-hidden{
 
 .reason-item-gray{
 	margin: 0;
-	padding:60px 70px;
 	padding-top: 50px;
-	align-self: center;
 }
+
+.reason-title-gray{
+	margin: 0;
+	padding: 0;
+	width:110px;
+	margin-top: 30px;
+}
+
 
 .search-column{
 	width: 576px;
