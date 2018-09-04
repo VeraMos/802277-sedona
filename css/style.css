@@ -302,7 +302,7 @@ input[type="checkbox"].visually-hidden{
 .filters fieldset {
 	width:100%;
 	border:none;
-	margin-left: auto; 
+
 
 }
 
@@ -477,6 +477,8 @@ input[type="checkbox"].visually-hidden{
 }
 
 .sorting{
+	margin: 0;
+	margin-bottom: 30px;
 	padding: 0px 70px;
 	box-sizing: border-box;
 	display: flex;
@@ -601,20 +603,18 @@ input[type="checkbox"].visually-hidden{
 
 .hotel-item{
 	margin: 0;
-	padding: 0;
+	padding: 23px 0;
 	display: flex;
 	align-items: center;
 }
+
 .hotel-item img{
-	margin-right: 30px; 
+	margin-right: 32px; 
 }
+
 .hotel-column{
 	padding: 0;
-	padding-left: 2px;
 	margin: 0;
-	width: 261px;
-	min-height: 94px;
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 }
@@ -651,7 +651,6 @@ input[type="checkbox"].visually-hidden{
 
 .hotel-rate{
 	margin: 0;
-	margin-bottom: 30px;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
@@ -686,8 +685,7 @@ input[type="checkbox"].visually-hidden{
 
 .hotel-stars{
 	font-size: 0;
-	margin-top: 30px;
-	margin-bottom: 47px; 
+	margin-bottom: 40px; 
 	width: 130px;
 	min-height: 20px;
 	background-image: 
@@ -701,23 +699,23 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-star-1{
-	width:25px;
+	width:23px;
 }
 
 .hotel-star-2{
-	width:50px;
+	width:46px;
 }
 
 .hotel-star-3{
-	width:75px;
+	width:69px;
 }
 
 .hotel-star-4{
-	width:100px;
+	width:92px;
 }
 
 .hotel-star-5{
-	width: 125px;
+	width: 115px;
 }
 
 .button {
