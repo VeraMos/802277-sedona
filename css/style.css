@@ -69,15 +69,17 @@ input[type="checkbox"].visually-hidden{
 }
 
 .site-navigation{
+	width: 1200px;
 	margin:0;
 	padding:0;
 	list-style: none;
 	display: flex;
-	flex-wrap: wrap;
 }
+
 .site-navigation a{
 	display: block;
-	padding: 24px 100px;
+	padding: 0;
+	padding: 16px 73px;
 	vertical-align: middle;
 	color:#000000;
 }
@@ -107,8 +109,8 @@ input[type="checkbox"].visually-hidden{
 	background-color: #ffffff;
 	background-image: 
 		url("../img/polygon.svg"),
-		url("../img/welcome.jpg");
-	background-position: 0px 506px, 0 0;
+		url("../img/background.jpg");
+	background-position: 0px 452px, 0 0;
 	background-repeat: no-repeat;
 }
 
@@ -293,7 +295,7 @@ input[type="checkbox"].visually-hidden{
 	border:none;
 
 }
-.filters fieldset:last-child{
+.filters fieldset:{
 	width:330px;
 	margin-left: auto;
 	padding: 0;
@@ -631,10 +633,8 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-rate-text{
-	width:110px;
-	min-height: 27px;
 	margin: 0;
-	padding: 0;
+	padding: 5px 14px;
 	font-weight: normal;
 	text-align:center;
 	vertical-align: middle;
@@ -646,11 +646,20 @@ input[type="checkbox"].visually-hidden{
 	font-size: 0;
 	margin-top: 30px;
 	margin-bottom: 47px; 
-	width: 90px;
+	width: 130px;
 	min-height: 20px;
-	background-image: url('../img/star.svg');
-	background-repeat: repeat-x;
-	background-position: right 0; 
+	background-image: 
+	url('../img/star.svg'),
+	url('../img/star.svg'),
+	url('../img/star.svg'),
+	url('../img/star.svg'),
+	url('../img/star.svg');
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: 0 0, 25px 0, 50px 0, 75px 0, 100px 0;
+}
+
+.hotel-star-1{
+	width:25px;
 }
 
 .button {
@@ -714,6 +723,8 @@ input[type="checkbox"].visually-hidden{
 
 .search-form-line{
 	display: flex;
+	justify-content: space-between;
+	width: 100%;
 	align-items: center;
 	margin: 0;
 	padding: 0;
@@ -732,14 +743,13 @@ input[type="checkbox"].visually-hidden{
 	display: block;
 	position: relative;
 	margin: 0;
-	margin-left: 20px; 
 	padding: 0;
 
 }
 
 .search-form-fieled input[type="text"],
 .half-width input[type="text"]{
-	border: none;
+	border: 2px solid transparent;
 	box-sizing: border-box;
 	width: 346px;
 	padding: 7px 10px;
@@ -888,13 +898,14 @@ input[type="checkbox"].visually-hidden{
 
 .main-footer .container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .footer-contacts{
+	display: flex;
+	align-items: center;
 	margin:0;
 	padding: 0;
-	margin-top:45px; 
 }
 
 .footer-contacts a{
@@ -910,9 +921,7 @@ input[type="checkbox"].visually-hidden{
 	width:150px;
 	min-height: 50px;
 	margin:0;
-	margin-top:35px;
 	padding: 0;
-	margin-left:256px;
 }
 
 .footer-social ul{
@@ -928,10 +937,9 @@ input[type="checkbox"].visually-hidden{
 .footer-copyright{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width:200px;
 	margin:0;
-	margin-left: 228px;
-
 }
 
 .footer-copyright b{
@@ -940,13 +948,13 @@ input[type="checkbox"].visually-hidden{
 	margin: 0;
 	line-height: 26px;
 	font-weight: normal;
-	margin-top: 50px;
+
 }
 
 .footer-copyright a{
 	width:115px;
 	height:41px;
-	margin-top: 40px;
+
 }
 .footer-copyright a:hover,
 .footer-copyright a:focus{
