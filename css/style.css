@@ -743,7 +743,6 @@ input[type="checkbox"].visually-hidden{
 	position: relative;
 	margin:0;
 	padding: 0;
-	margin-left: 28px;
 
 }
 
@@ -772,7 +771,7 @@ input[type="checkbox"].visually-hidden{
 	font:inherit;
 	margin:0;
 	width: 113px;
-
+	padding-left: 30px;
 	text-align: center;
 }
 
@@ -810,13 +809,22 @@ input[type="checkbox"].visually-hidden{
 	fill:#000000;
 }
 
-.calindaer:active svg{
+.calendar:active svg{
 	fill:#81b3d2;
+}
+
+.half-line{
+	width: 50%;
+}
+
+.half-line label:nth(2)-child{
+	padding-left: 50px; 
 }
 
 .btn-minus,
 .btn-plus{
 	position: absolute;
+	top:0;
 	width: 38px;
 	height: 38px;
 
@@ -827,12 +835,10 @@ input[type="checkbox"].visually-hidden{
 }
 
 .btn-minus{
-	top:-5px;
-	left:30px;
+	left:0;
 }
 
 .btn-plus{
-	top:-5px;
 	right:0;
 }
 
@@ -864,7 +870,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .btn-plus::after {
-	transform: rotate(-90deg);
+	transform: rotate(90deg);
 }
 
 .btn-minus::before:hover{
@@ -972,11 +978,12 @@ input[type="checkbox"].visually-hidden{
 	height:41px;
 
 }
-.footer-copyright:hover svg,
-.footer-copyright:focus svg{
+.footer-copyright a:hover svg,
+.footer-copyright a:focus svg{
 	fill:#81b3d2;
 }
-.footer-copyright:active svg{
+
+.footer-copyright a:active svg{
 	fill:#bdbbbc;
 }
 
