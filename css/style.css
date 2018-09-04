@@ -47,9 +47,31 @@ input[type="checkbox"].visually-hidden{
 	overflow: hidden;
 }
 
+.button {
+	font-size: 21px;
+	line-height: 26px;
+	width: 100%;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #766357;
+	border: none;
+}
+
+.button:focus,
+.button:hover{
+	background-color: #604e43;
+}
+
+.button:active{
+	background-color: #503e33;
+}
+
 .main-navigation {
 	position: relative;
-	width: 1200px;
 	min-height: 56px;
 	line-height: 26px;
 	display: flex;
@@ -69,23 +91,36 @@ input[type="checkbox"].visually-hidden{
 }
 
 .site-navigation{
-	width: 1200px;
+	width: 100%;
+	padding: 0 70px;
 	margin:0;
-	padding:0;
 	list-style: none;
 	display: flex;
+}
+
+.site-navigation li{
+	padding: 14px 0;
+	margin-right: 150px;
+}
+
+.site-navigation li:nth-child(3){
+	margin-left: auto;
+	margin-right: 165px;
+}
+
+.site-navigation li:last-child{
+	margin-right: 0;
 }
 
 .site-navigation a{
 	display: block;
 	padding: 0;
-	padding: 16px 73px;
 	vertical-align: middle;
 	color:#000000;
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,{
+.site-navigation a:focus{
 	color:#81b3d2;
 }
 
@@ -283,7 +318,7 @@ input[type="checkbox"].visually-hidden{
 .filters{
 	padding:0 70px;
 	margin: 0;
-	min-height: 218px;
+	margin-bottom: 30px;
 	color:#ffffff;
 	background-image: url("../img/filter-bg.jpg");
 	background-color:gray;
@@ -291,26 +326,40 @@ input[type="checkbox"].visually-hidden{
 	background-repeat: no-repeat;
 }
 
+.filters-form{
+	padding: 27px 0;
+}
+
 .filters-column{
 	padding:0;
 	margin: 0;
-	margin-bottom: 30px;
 	display: flex;
-	padding-top: 26px;
-
 }
-.filters fieldset {
-	width:100%;
+
+.filters-fieldset {
+	min-width:240px;
+	margin: 0;
+	padding: 0;
 	border:none;
-
-
 }
 
 .filters legend{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 19px;
+	margin-bottom: 22px;
 	font-size: 16px;
+}
+
+.hotel-type{
+	margin-left: 15px;
+}
+
+.hotel-range{
+	margin-left: auto;
+}
+
+.hotel-range legend{
+	margin-bottom: 9px;
 }
 
 .filter-list{
@@ -320,8 +369,13 @@ input[type="checkbox"].visually-hidden{
 }
 
 .filter-option{
-	margin-bottom:25px;
-	padding-left: 30px;
+	margin-bottom:26px;
+	padding-left: 42px;
+}
+
+.filter-option:last-child{
+	margin-bottom: 0;
+
 }
 
 .filter-option label {
@@ -574,10 +628,18 @@ input[type="checkbox"].visually-hidden{
 
 .hotel{
 	min-height: 455px;
-	padding: 0px 70px;
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
+}
+
+.hotel-name{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	font-size:21px;
+	line-height:26px;
+	color:#000000;
 }
 
 .hotel-name a{
@@ -602,8 +664,11 @@ input[type="checkbox"].visually-hidden{
 }
 
 .hotel-item{
+	min-height: 150px;
+	box-sizing: border-box;
 	margin: 0;
-	padding: 23px 0;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 25px 70px;
 	display: flex;
 	align-items: center;
 }
@@ -619,18 +684,10 @@ input[type="checkbox"].visually-hidden{
 	flex-direction: column;
 }
 
-.hotel-column h3{
-	padding: 0;
-	margin: 0;
-	margin-bottom: 15px;
-	font-size:21px;
-	line-height:26px;
-	color:#000000;
-}
-
 .title-prise-column{
 	display: flex;
 	justify-content: space-between; 
+	margin-bottom:12px;
 }
 
 .hotel-title,
@@ -638,7 +695,7 @@ input[type="checkbox"].visually-hidden{
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 15px; 
+
 }
 
 .hotel-title{
@@ -659,18 +716,21 @@ input[type="checkbox"].visually-hidden{
 }
 
 .button-column{
-	width: 258px;
 	padding: 0;
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
 }
 
-.button-column .button-hotel{
-	width: 142px;
+.button-hotel{
 	padding: 5px 15px;
 	font-size: 14px;
 	line-height: 21px;
+	margin-left:10px;
+}
+
+.button-hotel:first-child{
+	margin-left: 0;
 }
 
 .hotel-rate-text{
@@ -716,29 +776,6 @@ input[type="checkbox"].visually-hidden{
 
 .hotel-star-5{
 	width: 115px;
-}
-
-.button {
-	font-size: 21px;
-	line-height: 26px;
-	width: 100%;
-
-	text-align: center;
-	color: #ffffff;
-	vertical-align: middle;
-	text-transform: uppercase;
-
-	background-color: #766357;
-	border: none;
-}
-
-.button:focus,
-.button:hover{
-	background-color: #604e43;
-}
-
-.button:active{
-	background-color: #503e33;
 }
 
 .modal-search{
