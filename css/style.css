@@ -355,12 +355,14 @@ input[type="checkbox"].visually-hidden{
 	padding: 0;
 	margin: 0;
 	margin-bottom:20px;
+	font-weight: normal;
 }
 
 .reason-text-gray{
 	padding: 0;
 	margin: 0;
 	width:268px;
+	font-weight: normal;
 }
 
 
