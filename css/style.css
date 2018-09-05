@@ -144,9 +144,9 @@ input[type="checkbox"].visually-hidden{
 	text-align: center;
 	background-color: #ffffff;
 	background-image: 
-		url("../img/polygon.svg"),
+		url("../img/intro-mask.svg"),
 		url("../img/background.jpg");
-	background-position: 0px 452px, 0 0;
+	background-position: 0px 450px, 0 0;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 }
@@ -329,6 +329,8 @@ input[type="checkbox"].visually-hidden{
 .reasons-list-gray{
 	margin: 0;
 	padding: 0px 73px;
+	padding-top: 48px;
+	box-sizing: border-box;
 	min-height: 260px;
 	display: flex;
 	justify-content: space-between;
@@ -338,14 +340,23 @@ input[type="checkbox"].visually-hidden{
 
 .reason-item-gray{
 	margin: 0;
-	padding-top: 50px;
 }
 
 .reason-title-gray{
-	margin: 0;
+	margin: 0 auto;
+	margin-bottom: 25px; 
 	padding: 0;
 	width:110px;
-	margin-top: 30px;
+}
+
+.reason-number-gray{
+	padding: 0;
+	margin: 0;
+}
+
+.reason-text-gray{
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -357,12 +368,19 @@ input[type="checkbox"].visually-hidden{
 }
 
 .search-title{
+	margin: 0;
+	padding: 0;
+	margin-top: 46px;
+	margin-bottom: 30px;
 	font-size:30px;
 	line-height: 36px;
 	text-align:center;
 }
 
 .search-description{
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 0;
 	font-weight: normal;
 	text-align:center;
 }
@@ -847,8 +865,9 @@ input[type="checkbox"].visually-hidden{
 }
 
 .button-search{
-	width:576px;
-	height: 86px;
+	font-weight: bold;
+	width:563px;
+	min-height: 86px;
 }
 
 .search-form{
@@ -859,7 +878,8 @@ input[type="checkbox"].visually-hidden{
 	width:576px;
 	min-height: 395px;
 	padding: 57px;
-	box-sizing: border-box;
+	padding-top: 55px;
+	box-sizing:border-box;
 	background-color: #ffffff;
 
 	display: flex;
@@ -874,6 +894,7 @@ input[type="checkbox"].visually-hidden{
 	align-items: center;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .half-width{
@@ -1047,15 +1068,15 @@ input[type="checkbox"].visually-hidden{
 
 .map-canvas{
 	width:1200px;
-	height:594px;
-	background-image: url(../img/map.jpg);
+	min-height:475px;
+	background-image: url(../img/map-small.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 
 .main-footer{
 	margin: 0 auto;
-	padding: 35px 0;
+	padding: 32px 0;
 	padding-left: 130px;
 	padding-right: 120px;
 	width:1200px;
@@ -1072,6 +1093,7 @@ input[type="checkbox"].visually-hidden{
 	display: flex;
 	align-items: center;
 	margin:0;
+	margin-right: 40px;
 	padding: 0;
 }
 
@@ -1107,6 +1129,7 @@ input[type="checkbox"].visually-hidden{
 	align-items: center;
 	width:200px;
 	margin:0;
+	margin-right: -20px;
 }
 
 .footer-copyright b{
