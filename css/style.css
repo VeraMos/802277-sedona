@@ -411,7 +411,7 @@ input[type="checkbox"].visually-hidden {
 .filters {
 	padding:0 70px;
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	color:#ffffff;
 	background-image: url("../img/filter-bg.jpg");
 	background-color:gray;
@@ -809,6 +809,7 @@ input[type="checkbox"].visually-hidden {
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
+	margin-right: 7px;
 }
 
 .hotel-title {
@@ -837,14 +838,17 @@ input[type="checkbox"].visually-hidden {
 }
 
 .button-hotel {
+	width:142px;
 	padding: 5px 15px;
 	font-size: 14px;
 	line-height: 21px;
-	margin-left:10px;
+	margin-right:10px;
 }
 
 .button-hotel:first-child {
+	width:110px;
 	margin-left: 0;
+	padding: 5px 15px;
 }
 
 .hotel-rate-text {
