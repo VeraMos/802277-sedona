@@ -371,7 +371,7 @@ input[type="checkbox"].visually-hidden {
 .reason-number-gray {
 	padding: 0;
 	margin: 0;
-	margin-bottom:20px;
+	margin-bottom:24px;
 	font-weight: normal;
 }
 
@@ -556,9 +556,14 @@ input[type="checkbox"].visually-hidden {
 
 .filter-range-list .range-to,
 .filter-range-list .range-from {
-	width: 90px;
-	padding-left: 65px;
+	/*width: 90px;*/
+	padding-left: 79px;
 }
+
+.filter-range-list .range-from {
+	padding-left: 64px;
+}
+
 
 .filter-range-list input {
 	width: 50px;
@@ -919,13 +924,12 @@ input[type="checkbox"].visually-hidden {
 .search-form {
 	position: absolute;
 	top:86px;
-	left: 5px;
+	left: 4px;
 
 	width:568px;
 	min-height: 395px;
-	padding-right: 55px;
-	padding-left: 60px;
-	padding-top: 38px;
+	padding: 55px;
+	padding-bottom: 0px;
 	box-sizing:border-box;
 	background-color: #ffffff;
 
@@ -935,7 +939,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-form-line:nth-child(4) label {
-	margin-left: 50px;
+	margin-left: 52px;
 }
 
 .search-form-line {
@@ -960,7 +964,13 @@ input[type="checkbox"].visually-hidden {
 	position: relative;
 	margin: 0;
 	padding: 0;
+	margin-right: -7px;
+	margin-bottom: 30px;
+}
 
+.search-form-label{
+	margin-bottom: 36px;
+	margin-left: 2px;
 }
 
 .search-form-fieled input[type="text"],
@@ -968,7 +978,7 @@ input[type="checkbox"].visually-hidden {
 	border: 2px solid transparent;
 	box-sizing: border-box;
 	width: 346px;
-	padding: 7px 10px;
+	padding: 5px 4px;
 	padding-right: 35px;
 	line-height: 26px;
 	font:inherit;
@@ -1001,7 +1011,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	top:5px;
-	right:13px;
+	right:16px;
 	width:21px;
 	height: 22px;
 	background-color: transparent;
@@ -1024,7 +1034,11 @@ input[type="checkbox"].visually-hidden {
 
 .half-line {
 	width: 50%;
-	margin-bottom: 45px;
+
+}
+
+.half-line label{
+	margin-left: 0px;
 }
 
 .btn-minus,
@@ -1110,7 +1124,8 @@ input[type="checkbox"].visually-hidden {
 .search-form .button-blue {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 58px;
+	margin-bottom: 61px;
+	padding: 7px 0;
 }
 
 .map-canvas {
