@@ -277,9 +277,8 @@ input[type="checkbox"].visually-hidden {
 	box-sizing: border-box;
 	margin:0;
 	width:400px;
-	min-height:330px;
 	padding: 160px 50px;
-	padding-bottom: 0;
+	padding-bottom: 84px;
 }
 
 .feature-item p {
