@@ -157,7 +157,7 @@ input[type="checkbox"].visually-hidden {
 		url("../img/intro-mask.svg"),
 		url("../img/background.jpg");
 	background-position: 0px 453px, 0 0;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat, no-repeat;
 	box-sizing: border-box;
 }
 
@@ -618,8 +618,13 @@ input[type="checkbox"].visually-hidden {
 
 .btn-transparent {
 	display: block;
+	width: 133px;
 	margin: 0 auto;
-	padding: 6px 35px;
+	margin-right: 100px;
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	padding-right: 15px; 
 
 	font-size: 14px;
 	line-height: 20px;
@@ -792,7 +797,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .title-prise-column {
-	width: 270px;
+	width: 266px;
 	display: flex;
 	justify-content: space-between; 
 	margin-bottom:12px;
@@ -823,7 +828,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .button-column {
-	width: 270px;
+	width: 266px;
 	padding: 0;
 	margin: 0;
 	display: flex;
