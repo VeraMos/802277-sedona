@@ -256,6 +256,7 @@ input[type="checkbox"].visually-hidden {
 .reason-column {
 	display: flex;
 	justify-content: center;
+	background-color: #81b3d2;
 }
 
 .reasons-picture {
