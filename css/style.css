@@ -907,16 +907,16 @@ input[type="checkbox"].visually-hidden {
 
 .button-search {
 	font-weight: bold;
-	width:563px;
+	width:568px;
 	min-height: 86px;
 }
 
 .search-form {
 	position: absolute;
 	top:86px;
-	left: 0;
+	left: 5px;
 
-	width:576px;
+	width:568px;
 	min-height: 395px;
 	padding-right: 55px;
 	padding-left: 60px;
