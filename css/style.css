@@ -1103,7 +1103,7 @@ input[type="checkbox"].visually-hidden {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 }
 
 .search-form-label{
@@ -1174,7 +1174,7 @@ input[type="checkbox"].visually-hidden {
 
 .half-line {
 	width: 50%;
-	margin-bottom: 58px;
+	margin-bottom: 52px;
 
 }
 
@@ -1187,6 +1187,7 @@ input[type="checkbox"].visually-hidden {
 .btn-plus {
 	position: relative;
 	width: 38px;
+	min-height: 38px;
 	font-size: 0;
 	background-color: transparent;
 	border: 0;
@@ -1197,8 +1198,8 @@ input[type="checkbox"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top:12px;
-	left:12px;
+	top:16px;
+	left:13px;
 
 	width: 12px;
 	height: 3px;
@@ -1211,7 +1212,7 @@ input[type="checkbox"].visually-hidden {
 	content: "";
 
 	position: absolute;
-	top:12px;
+	top:17px;
 	left:12px;
 
 	width: 12px;
