@@ -465,7 +465,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filters-form {
-	padding: 27px 0;
+	padding: 29px 0;
 	padding-bottom: 30px;
 }
 
@@ -478,7 +478,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filters-fieldset {
-	min-width:240px;
+	min-width:241px;
 	margin: 0;
 	padding: 0;
 	border:none;
@@ -486,6 +486,7 @@ input[type="checkbox"].visually-hidden {
 
 .filters legend {
 	margin: 0;
+	margin-left: 2px;
 	padding: 0;
 	margin-bottom: 22px;
 	font-size: 16px;
@@ -501,7 +502,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-range legend {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+	margin-left: 3px;
 }
 
 .filter-list {
@@ -572,7 +574,7 @@ input[type="checkbox"].visually-hidden {
 .filter-range-list {
 	position: relative;
 
-	height: 36px;
+
 	margin-bottom: 20px;
 	font-size: 0;
 
@@ -600,7 +602,7 @@ input[type="checkbox"].visually-hidden {
 	display: inline-block;
 
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 33px;
 	vertical-align: top;
 
 	cursor: pointer;
@@ -622,8 +624,7 @@ input[type="checkbox"].visually-hidden {
 	margin: 0;
 
 	color: inherit;
-	font: inherit;
-
+	font-weight:bold;
 	background: none;
 	border: none;
 }
