@@ -1289,6 +1289,7 @@ input[type="checkbox"].visually-hidden {
 	min-height:475px;
 	background-color: #f2f2f2;
 	background-image: url(../img/map-small.jpg);
+	background-size: 1200px 470px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
