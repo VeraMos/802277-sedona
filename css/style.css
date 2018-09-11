@@ -81,7 +81,6 @@ input[type="checkbox"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
 	background-color: #ffffff;
 }
 
@@ -110,28 +109,41 @@ input[type="checkbox"].visually-hidden {
 }
 
 .site-navigation li {
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
 	padding: 14px 0;
 	/*margin-right: 150px;*/
 }
 
-.site-navigation li:nth-child(2) {
-	text-align: left;
-	padding-right: 90px; 
-	/*margin-right: 165px;*/
+.site-navigation li:first-child,
+.site-navigation li:nth-child(4n+1) {
+	width:92px;
+	margin-right: 152px;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(-n+4) {
+	margin-top: 0px;
+}
+
+.site-navigation li:nth-child(4n-2) {
+	text-align: left;
+	padding-right: 99px;
+	width:103px;
+	margin-right: 162px;
+}
+
+.site-navigation li:nth-child(4n-1) {
 	text-align: right;
 	padding-right: 14px;
-	/*margin-right: 165px;*/
+	width:92px;
+	margin-left: 102px;
+	margin-right: 111px;
+	padding-left: 15px;
 }
 
-.site-navigation li:last-child {
+.site-navigation li:nth-child(4n) {
 	text-align: right;
 	margin-right: 0;
+	width:78px;
+	padding-left: 39px;
 }
 
 .site-navigation a {
@@ -705,8 +717,8 @@ input[type="checkbox"].visually-hidden {
 
 .sorting {
 	margin: 0;
-	margin-bottom: 30px;
-	padding: 0px 70px;
+	margin-bottom: 28px;
+	padding: 0px 72px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	display: -webkit-box;
@@ -869,7 +881,7 @@ input[type="checkbox"].visually-hidden {
 	        box-sizing: border-box;
 	margin: 0;
 	border-bottom: 1px solid #e5e5e5;
-	padding: 25px 70px;
+	padding: 25px 72px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
