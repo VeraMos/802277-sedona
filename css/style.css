@@ -105,7 +105,8 @@ input[type="checkbox"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap; 
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap; 
 }
 
 .site-navigation li {
@@ -249,8 +250,8 @@ input[type="checkbox"].visually-hidden {
 	margin:0;
 	padding-top:47px; 
 	padding-bottom:38px;
-	padding-right:60px;
-	padding-left: 60px;
+	padding-right:38px;
+	padding-left: 40px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	background-color: #81b3d2;
@@ -265,7 +266,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 	width: 151px;
 	text-align: center;
-	padding-left: 65px;
+	padding-left: 84px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -280,6 +281,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 	font-weight: normal;
 	text-align: center;
+	white-space: pre-wrap;
 }
 
 .reason-text {
@@ -432,6 +434,7 @@ input[type="checkbox"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	width:268px;
+	white-space: pre-wrap;
 	font-weight: normal;
 }
 
@@ -1025,14 +1028,29 @@ input[type="checkbox"].visually-hidden {
 
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
 	from {
 		opacity: 0.5;
-		transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0px);
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
+	}
+}
+
+@keyframes bounce {
+	from {
+		opacity: 0.5;
+		-webkit-transform: translateY(-10px);
+		        transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		        transform: translateY(0px);
 	}
 }
 
@@ -1090,7 +1108,8 @@ input[type="checkbox"].visually-hidden {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	animation: bounce 0.8s;
+	-webkit-animation: bounce 0.8s;
+	        animation: bounce 0.8s;
 }
 
 .search-form-line:nth-child(4) label {
@@ -1116,8 +1135,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .half-width {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin:0;
 	width: 113px;
 	padding: 0;
@@ -1297,36 +1320,42 @@ input[type="checkbox"].visually-hidden {
 	background-size: 1200px 470px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	z-index: -1;
+	border:none;
 }
 
 .map-canvas iframe{
-	z-index: -1;
+	border:none;
 }
 
 .main-footer {
-	/*position: absolute;
-	bottom:0;
-	left: 0;*/
+	margin-top: -5px;
 	margin: 0 auto;
-	padding: 32px 0;
-	padding-left: 130px;
-	padding-right: 120px;
 	width:1200px;
 	min-height:120px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	z-index: 1;
-	opacity: 0.9;
+	margin-top: -5px;
+
 }
 
 .main-footer .container {
+	width: 1200px;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	padding: 32px 0;
+	padding-left: 130px;
+	padding-right: 120px;
+		-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.9);
+
 }
 
 .footer-contacts {
