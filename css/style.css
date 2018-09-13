@@ -1026,9 +1026,14 @@ input[type="checkbox"].visually-hidden {
 }
 
 @keyframes bounce {
-  to {
-    transform: translateY(30px);
-  }
+	from {
+		opacity: 0.5;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .modal-search {
@@ -1292,9 +1297,17 @@ input[type="checkbox"].visually-hidden {
 	background-size: 1200px 470px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	z-index: -1;
+}
+
+.map-canvas iframe{
+	z-index: -1;
 }
 
 .main-footer {
+	/*position: absolute;
+	bottom:0;
+	left: 0;*/
 	margin: 0 auto;
 	padding: 32px 0;
 	padding-left: 130px;
@@ -1303,6 +1316,8 @@ input[type="checkbox"].visually-hidden {
 	min-height:120px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	z-index: 1;
+	opacity: 0.9;
 }
 
 .main-footer .container {
